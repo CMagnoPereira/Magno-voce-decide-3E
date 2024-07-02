@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
   {
-    enunciado: "pergunta 1",
+    enunciado: "perguta 1",
     alternativas: [
       "Resposta 1",
       "Resposta 2"
@@ -22,7 +22,7 @@ const perguntas = [
   },
 
   {
-    enunciado: "pergunta 3",
+    enunciado: "ja pode aumersar?",
     alternativas: [
       "Resposta 1",
       "Resposta 2"
@@ -45,3 +45,13 @@ const perguntas = [
     ]
   }
 ];
+
+let atual = 2;
+let perguntaAtual;
+
+function motraPergunta() {
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+motraPergunta();
